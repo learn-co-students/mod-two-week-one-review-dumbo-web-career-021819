@@ -1,28 +1,34 @@
+<div class="container">
 <%= form_for @sea do |f| %>
-  <%= f.label :name %>
-  <%= f.text_field :name %>
+  <%= f.label :name %>:<br>
+  <%= f.text_field :name %><br>
 
-  <%= f.label :temperature %>
-  <%= f.number_field :temperature %>
+  <%= f.label :temperature %>:<br>
+  <%= f.number_field :temperature %><br>
 
-  <%= f.label :bio %>
-  <%= f.text_area :bio %>
+  <%= f.label :bio %>:<br>
+  <%= f.text_area :bio %><br>
 
-  <%= f.label :image_url %>
-  <%= f.text_field :image_url %>
+  <%= f.label :image_url %>:<br>
+  <%= f.text_field :image_url %><br>
 
-  <%= f.label :mood %>
-  <%= f.text_field :mood %>
+  <%= f.label :mood %>:<br>
+  <%= f.text_field :mood %><br>
 
-  <%= f.label :favorite_color %>
-  <%= f.text_field :favorite_color %>
+  <%= f.label :favorite_color %>:<br>
+  <%= f.text_field :favorite_color %><br>
 
-  <%= f.label :scariest_creature %>
-  <%= f.text_field :scariest_creature %>
+  <%= f.label :scariest_creature %>:<br>
+  <%= f.text_field :scariest_creature %><br>
 
-  <%= f.label :has_mermaids %>
-  <%= f.check_box :has_mermaids %>
+  <%= f.label :has_mermaids %>:<br>
+  <%= f.check_box :has_mermaids %><br>
 
-  <%=  f.submit %>
-
+  <div class="text-center">
+  <%=  f.submit %><br>
+  </div>
+  <div class="text-center">
+  <button class="btn btn-info" style="margin: 1em"><a class="btn-info" href="/seas">All Seas</a></button>
+  </div>
+</div>
   <% end %>
